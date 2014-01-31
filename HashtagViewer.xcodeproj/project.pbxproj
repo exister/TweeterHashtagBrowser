@@ -14,13 +14,14 @@
 		18244361189C42560069CF11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18244360189C42560069CF11 /* main.m */; };
 		18244365189C42560069CF11 /* HTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18244364189C42560069CF11 /* HTAppDelegate.m */; };
 		18244368189C42560069CF11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18244366189C42560069CF11 /* Main.storyboard */; };
-		1824436B189C42560069CF11 /* HTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824436A189C42560069CF11 /* HTViewController.m */; };
 		1824436D189C42560069CF11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1824436C189C42560069CF11 /* Images.xcassets */; };
 		18244374189C42560069CF11 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18244373189C42560069CF11 /* XCTest.framework */; };
 		18244375189C42560069CF11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18244354189C42560069CF11 /* Foundation.framework */; };
 		18244376189C42560069CF11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18244358189C42560069CF11 /* UIKit.framework */; };
 		1824437E189C42560069CF11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1824437C189C42560069CF11 /* InfoPlist.strings */; };
 		18244380189C42560069CF11 /* HashtagViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824437F189C42560069CF11 /* HashtagViewerTests.m */; };
+		18244390189C43A10069CF11 /* HTSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824438F189C43A10069CF11 /* HTSearchViewController.m */; };
+		18244395189C4A170069CF11 /* UIDevice+HTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 18244394189C4A170069CF11 /* UIDevice+HTHelpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,20 @@
 		18244363189C42560069CF11 /* HTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTAppDelegate.h; sourceTree = "<group>"; };
 		18244364189C42560069CF11 /* HTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTAppDelegate.m; sourceTree = "<group>"; };
 		18244367189C42560069CF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18244369189C42560069CF11 /* HTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTViewController.h; sourceTree = "<group>"; };
-		1824436A189C42560069CF11 /* HTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTViewController.m; sourceTree = "<group>"; };
 		1824436C189C42560069CF11 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18244372189C42560069CF11 /* HashtagViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashtagViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18244373189C42560069CF11 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1824437B189C42560069CF11 /* HashtagViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HashtagViewerTests-Info.plist"; sourceTree = "<group>"; };
 		1824437D189C42560069CF11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1824437F189C42560069CF11 /* HashtagViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashtagViewerTests.m; sourceTree = "<group>"; };
+		1824438A189C43180069CF11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		1824438B189C43300069CF11 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		1824438C189C43300069CF11 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1824438D189C43300069CF11 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1824438E189C43A10069CF11 /* HTSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTSearchViewController.h; path = Controllers/Search/HTSearchViewController.h; sourceTree = "<group>"; };
+		1824438F189C43A10069CF11 /* HTSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTSearchViewController.m; path = Controllers/Search/HTSearchViewController.m; sourceTree = "<group>"; };
+		18244393189C4A170069CF11 /* UIDevice+HTHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+HTHelpers.h"; path = "Helpers/UIDevice+HTHelpers.h"; sourceTree = "<group>"; };
+		18244394189C4A170069CF11 /* UIDevice+HTHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+HTHelpers.m"; path = "Helpers/UIDevice+HTHelpers.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +119,11 @@
 		1824435A189C42560069CF11 /* HashtagViewer */ = {
 			isa = PBXGroup;
 			children = (
+				18244391189C43A50069CF11 /* Controllers */,
+				18244396189C4A1B0069CF11 /* Helpers */,
 				18244363189C42560069CF11 /* HTAppDelegate.h */,
 				18244364189C42560069CF11 /* HTAppDelegate.m */,
 				18244366189C42560069CF11 /* Main.storyboard */,
-				18244369189C42560069CF11 /* HTViewController.h */,
-				1824436A189C42560069CF11 /* HTViewController.m */,
 				1824436C189C42560069CF11 /* Images.xcassets */,
 				1824435B189C42560069CF11 /* Supporting Files */,
 			);
@@ -150,6 +157,32 @@
 				1824437C189C42560069CF11 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18244391189C43A50069CF11 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18244392189C43B10069CF11 /* Search */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		18244392189C43B10069CF11 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				1824438E189C43A10069CF11 /* HTSearchViewController.h */,
+				1824438F189C43A10069CF11 /* HTSearchViewController.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		18244396189C4A1B0069CF11 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18244393189C4A170069CF11 /* UIDevice+HTHelpers.h */,
+				18244394189C4A170069CF11 /* UIDevice+HTHelpers.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +234,7 @@
 				ORGANIZATIONNAME = mkuznetsov;
 				TargetAttributes = {
 					18244371189C42560069CF11 = {
-						TestTargetID = 18244350189C42560069CF11;
+						TestTargetID = 18244350189C42560069CF11 /* HashtagViewer */;
 					};
 				};
 			};
@@ -212,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 18244348189C42560069CF11;
 			productRefGroup = 18244352189C42560069CF11 /* Products */;
@@ -250,9 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1824436B189C42560069CF11 /* HTViewController.m in Sources */,
+				18244390189C43A10069CF11 /* HTSearchViewController.m in Sources */,
 				18244365189C42560069CF11 /* HTAppDelegate.m in Sources */,
 				18244361189C42560069CF11 /* main.m in Sources */,
+				18244395189C4A170069CF11 /* UIDevice+HTHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +314,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1824435E189C42560069CF11 /* en */,
+				1824438C189C43300069CF11 /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -287,6 +323,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				18244367189C42560069CF11 /* Base */,
+				1824438A189C43180069CF11 /* en */,
+				1824438B189C43300069CF11 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -295,6 +333,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1824437D189C42560069CF11 /* en */,
+				1824438D189C43300069CF11 /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -335,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -368,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -461,6 +500,7 @@
 				18244385189C42560069CF11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18244386189C42560069CF11 /* Build configuration list for PBXNativeTarget "HashtagViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +509,7 @@
 				18244388189C42560069CF11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
