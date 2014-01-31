@@ -22,6 +22,9 @@
 		18244380189C42560069CF11 /* HashtagViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824437F189C42560069CF11 /* HashtagViewerTests.m */; };
 		18244390189C43A10069CF11 /* HTSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824438F189C43A10069CF11 /* HTSearchViewController.m */; };
 		18244395189C4A170069CF11 /* UIDevice+HTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 18244394189C4A170069CF11 /* UIDevice+HTHelpers.m */; };
+		18244398189C5AAC0069CF11 /* HTSearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18244397189C5AAC0069CF11 /* HTSearchResultCell.xib */; };
+		1824439D189C5C370069CF11 /* HTSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824439C189C5C370069CF11 /* HTSearchResultCell.m */; };
+		1824439F189C5D5D0069CF11 /* HTLoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1824439E189C5D5D0069CF11 /* HTLoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,10 @@
 		1824438F189C43A10069CF11 /* HTSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTSearchViewController.m; path = Controllers/Search/HTSearchViewController.m; sourceTree = "<group>"; };
 		18244393189C4A170069CF11 /* UIDevice+HTHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+HTHelpers.h"; path = "Helpers/UIDevice+HTHelpers.h"; sourceTree = "<group>"; };
 		18244394189C4A170069CF11 /* UIDevice+HTHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+HTHelpers.m"; path = "Helpers/UIDevice+HTHelpers.m"; sourceTree = "<group>"; };
+		18244397189C5AAC0069CF11 /* HTSearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HTSearchResultCell.xib; path = Views/Search/HTSearchResultCell.xib; sourceTree = "<group>"; };
+		1824439B189C5C370069CF11 /* HTSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTSearchResultCell.h; path = Views/Search/HTSearchResultCell.h; sourceTree = "<group>"; };
+		1824439C189C5C370069CF11 /* HTSearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTSearchResultCell.m; path = Views/Search/HTSearchResultCell.m; sourceTree = "<group>"; };
+		1824439E189C5D5D0069CF11 /* HTLoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HTLoadingCell.xib; path = Views/Search/HTLoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				18244391189C43A50069CF11 /* Controllers */,
+				18244399189C5ADD0069CF11 /* Views */,
 				18244396189C4A1B0069CF11 /* Helpers */,
 				18244363189C42560069CF11 /* HTAppDelegate.h */,
 				18244364189C42560069CF11 /* HTAppDelegate.m */,
@@ -183,6 +191,25 @@
 				18244394189C4A170069CF11 /* UIDevice+HTHelpers.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		18244399189C5ADD0069CF11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1824439A189C5AE30069CF11 /* Search */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1824439A189C5AE30069CF11 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				18244397189C5AAC0069CF11 /* HTSearchResultCell.xib */,
+				1824439B189C5C370069CF11 /* HTSearchResultCell.h */,
+				1824439C189C5C370069CF11 /* HTSearchResultCell.m */,
+				1824439E189C5D5D0069CF11 /* HTLoadingCell.xib */,
+			);
+			name = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1824439F189C5D5D0069CF11 /* HTLoadingCell.xib in Resources */,
+				18244398189C5AAC0069CF11 /* HTSearchResultCell.xib in Resources */,
 				1824436D189C42560069CF11 /* Images.xcassets in Resources */,
 				1824435F189C42560069CF11 /* InfoPlist.strings in Resources */,
 				18244368189C42560069CF11 /* Main.storyboard in Resources */,
@@ -285,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18244390189C43A10069CF11 /* HTSearchViewController.m in Sources */,
+				1824439D189C5C370069CF11 /* HTSearchResultCell.m in Sources */,
 				18244365189C42560069CF11 /* HTAppDelegate.m in Sources */,
 				18244361189C42560069CF11 /* main.m in Sources */,
 				18244395189C4A170069CF11 /* UIDevice+HTHelpers.m in Sources */,

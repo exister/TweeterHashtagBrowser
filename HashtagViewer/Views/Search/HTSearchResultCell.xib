@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="zRO-fv-bir" customClass="HTSearchResultCell">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zRO-fv-bir" id="RoC-WB-hac">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tweet content" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="291" translatesAutoresizingMaskIntoConstraints="NO" id="dre-me-oqk">
+                        <rect key="frame" x="20" y="41" width="291" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHj-F5-tQT">
+                        <rect key="frame" x="20" y="10" width="291" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dre-me-oqk" firstAttribute="top" secondItem="rHj-F5-tQT" secondAttribute="bottom" constant="10" id="81D-ZV-Aqa"/>
+                    <constraint firstAttribute="trailing" secondItem="dre-me-oqk" secondAttribute="trailing" constant="20" id="Csd-2z-kZB"/>
+                    <constraint firstItem="rHj-F5-tQT" firstAttribute="top" secondItem="RoC-WB-hac" secondAttribute="top" constant="10" id="Gt7-CL-kFd"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dre-me-oqk" secondAttribute="bottom" constant="10" id="PHL-e0-SxE"/>
+                    <constraint firstAttribute="trailing" secondItem="rHj-F5-tQT" secondAttribute="trailing" constant="20" id="Rlp-nk-Etz"/>
+                    <constraint firstItem="rHj-F5-tQT" firstAttribute="leading" secondItem="RoC-WB-hac" secondAttribute="leading" constant="20" id="rbF-cI-lKX"/>
+                    <constraint firstItem="dre-me-oqk" firstAttribute="leading" secondItem="RoC-WB-hac" secondAttribute="leading" constant="20" id="v9O-IA-I8s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tweetLabel" destination="dre-me-oqk" id="w3h-2A-n8W"/>
+                <outlet property="usernameLabel" destination="rHj-F5-tQT" id="l6X-ws-Sgu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
